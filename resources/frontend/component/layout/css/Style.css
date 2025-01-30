@@ -1,0 +1,86 @@
+.parallax-container {
+    height: 100vh; /* Full height */
+    background-image: url('/Images/25.jpg'); /* Replace with your image path */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .content {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    /* You can add more styling here */
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black */
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+
+  .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .hover-image:hover {
+    opacity: 1;
+  }
+
+
+  /* Initial Page Fade-In */
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+/* Main Page Fade-Out */
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* White background transition */
+.white-bg {
+  background-color: white;
+}
+
+
+ 
+  
+  
+
